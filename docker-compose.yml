@@ -13,6 +13,9 @@ services:
       - PASSWORD=odoo
     volumes:
       - ./addons:/mnt/extra-addons
+      - ./openerp-server.conf:/etc/odoo/openerp-server.conf
+    command: --config=/etc/odoo/openerp-server.conf
+
   db:
     image: postgres:9.4
     container_name: odoo8_db
