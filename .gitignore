@@ -4,5 +4,4 @@ venv/
 __pycache__/
 odoo.log
 *.pyc
-addons/
 odoo-db-data/
